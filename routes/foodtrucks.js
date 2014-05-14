@@ -12,6 +12,7 @@ exports.getRawData = function(req, res) {
   }
   var url = "http://data.sfgov.org/resource/rqzj-sfat.json";
   var that = this;
+  var ht = {};
   http.get(url, function(r) {
     var body = '';
     r.on('data', function(chunk) {
@@ -22,14 +23,17 @@ exports.getRawData = function(req, res) {
       var listing = [];
       for (var i = 0; i < d.length; i++) {
           var t = d[i];
-          if (t.status === "APPROVED" && t.location) {
-            listing.push({
-              type: t.facilitytype,
-              title: t.applicant,
-              lat: t.location.latitude,
-              lng: t.location.longitude,
-              menu: t.fooditems ? t.fooditems.replace(/\:/g,"<br>"): ""
-            });
+          if (t.status === "APPROVED" && t.latitude && t.longitude) {
+            if (!ht[t.title+t.latitude+t.longitude]) {
+              listing.push({
+                type: t.facilitytype,
+                title: t.applicant,
+                lat: t.latitude,
+                lng: t.longitude,
+                menu: t.fooditems ? t.fooditems.replace(/\:/g,"<br>"): ""
+              });
+              ht[t.title+t.latitude+t.longitude] = true;
+            } 
           }
       }
       FoodTrucks.data = listing;
