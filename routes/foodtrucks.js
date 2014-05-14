@@ -1,12 +1,22 @@
 var FoodTrucks = {};
 FoodTrucks.data;
 FoodTrucks.filtered = {};
+FoodTrucks.lastUpdateTime;
+
 exports.main = function(req, res) {
   res.send("HI!");
 };
 // unfiltered data, but only valid venues
 exports.getRawData = function(req, res) {
-  if (FoodTrucks.data) {
+  var requireUpdate = function() {
+    if (FoodTrucks.lastUpdateTime) {
+      var diff = new Date().getTime() - FoodTrucks.lastUpdateTime;
+      // update every one hour 
+      return diff >= 3600000;
+    }
+    return true;
+  };
+  if (FoodTrucks.data && requireUpdate() === false) {
     res.send(FoodTrucks.data);
     return;
   }
@@ -38,6 +48,7 @@ exports.getRawData = function(req, res) {
       }
       FoodTrucks.data = listing;
       FoodTrucks.filterData();
+      FoodTrucks.lastUpdateTime = new Date().getTime();
       res.send(listing);
     });
   }).on('error', function(e) {
@@ -68,11 +79,13 @@ FoodTrucks.filterData = function() {
   var item, keyword, category; 
   var basicKeyword = {
     "meals": [ 
-      "sandwich", "pizza", "salad", "burrito", "hot dogs", "italian", "meat", "soup",
-      "mexican", "indian", "filipino", "peruvian", "chicken", "kebab", "curry", "burger", "seafood"
+      "sandwich", "pizza", "salad", "burrito", "hot dogs", "italian", 
+      "meat", "soup", "mexican", "indian", "filipino", "peruvian", 
+      "chicken", "kebab", "curry", "burger", "seafood"
     ],
     "snacks": [
-      "kettle corn", "ice cream", "dessert", "cupcake", "churros", "watermelon"
+      "kettle corn", "ice cream", "dessert", "cupcake", 
+      "churros", "watermelon"
     ],
     "beverages": [
       "coffee", "espresso", "juice"
@@ -119,7 +132,8 @@ FoodTrucks.filterData = function() {
             FoodTrucks.filtered[t.mainCategory][t.subCategory]) {
           FoodTrucks.filtered[t.mainCategory][t.subCategory] = [];
         }
-        FoodTrucks.filtered[category[j].mainCategory][category[j].subCategory].push(item);  
+        FoodTrucks.filtered[category[j].mainCategory]
+                           [category[j].subCategory].push(item);  
       }
     } 
     else {
