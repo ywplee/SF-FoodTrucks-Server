@@ -1,0 +1,402 @@
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module 'express'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:1:77)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+ReferenceError: response is not defined
+    at Object.handle (/home/ubuntu/sf-foodtruck/server.js:31:3)
+    at next_layer (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:103:13)
+    at Route.dispatch (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:107:5)
+    at /home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:205:24
+    at Function.proto.process_params (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:269:12)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:199:19)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:176:38)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/serve-static/index.js:86:37)
+    at SendStream.EventEmitter.emit (events.js:95:17)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/send/lib/send.js:172:51)
+ReferenceError: response is not defined
+    at Object.handle (/home/ubuntu/sf-foodtruck/server.js:31:3)
+    at next_layer (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:103:13)
+    at Route.dispatch (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:107:5)
+    at /home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:205:24
+    at Function.proto.process_params (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:269:12)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:199:19)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:176:38)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/serve-static/index.js:86:37)
+    at SendStream.EventEmitter.emit (events.js:95:17)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/send/lib/send.js:172:51)
+ReferenceError: response is not defined
+    at Object.handle (/home/ubuntu/sf-foodtruck/server.js:31:3)
+    at next_layer (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:103:13)
+    at Route.dispatch (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:107:5)
+    at /home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:205:24
+    at Function.proto.process_params (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:269:12)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:199:19)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:176:38)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/serve-static/index.js:86:37)
+    at SendStream.EventEmitter.emit (events.js:95:17)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/send/lib/send.js:172:51)
+ReferenceError: response is not defined
+    at Object.handle (/home/ubuntu/sf-foodtruck/server.js:31:3)
+    at next_layer (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:103:13)
+    at Route.dispatch (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:107:5)
+    at /home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:205:24
+    at Function.proto.process_params (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:269:12)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:199:19)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:176:38)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/serve-static/index.js:86:37)
+    at SendStream.EventEmitter.emit (events.js:95:17)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/send/lib/send.js:172:51)
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ubuntu/sf-foodtruck/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:33:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+ReferenceError: response is not defined
+    at Object.handle (/home/ubuntu/sf-foodtruck/server.js:31:3)
+    at next_layer (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:103:13)
+    at Route.dispatch (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:107:5)
+    at /home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:205:24
+    at Function.proto.process_params (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:269:12)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:199:19)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:176:38)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/serve-static/index.js:86:37)
+    at SendStream.EventEmitter.emit (events.js:95:17)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/send/lib/send.js:172:51)
+ReferenceError: response is not defined
+    at Object.handle (/home/ubuntu/sf-foodtruck/server.js:31:3)
+    at next_layer (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:103:13)
+    at Route.dispatch (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:107:5)
+    at /home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:205:24
+    at Function.proto.process_params (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:269:12)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:199:19)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:176:38)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/serve-static/index.js:86:37)
+    at SendStream.EventEmitter.emit (events.js:95:17)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/send/lib/send.js:172:51)
+ReferenceError: response is not defined
+    at Object.handle (/home/ubuntu/sf-foodtruck/server.js:31:3)
+    at next_layer (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:103:13)
+    at Route.dispatch (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/route.js:107:5)
+    at /home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:205:24
+    at Function.proto.process_params (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:269:12)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:199:19)
+    at next (/home/ubuntu/sf-foodtruck/node_modules/express/lib/router/index.js:176:38)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/serve-static/index.js:86:37)
+    at SendStream.EventEmitter.emit (events.js:95:17)
+    at SendStream.error (/home/ubuntu/sf-foodtruck/node_modules/express/node_modules/send/lib/send.js:172:51)
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ubuntu/sf-foodtruck/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:33:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ubuntu/sf-foodtruck/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:58:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ubuntu/sf-foodtruck/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:43:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:34
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:34:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:9
+app.get('/', trucks.main);
+             ^
+ReferenceError: trucks is not defined
+    at Object.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:9:14)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:906:3
+
+/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:5
+app.configure(function() {
+    ^
+TypeError: Object function (req, res, next) {
+    app.handle(req, res, next);
+  } has no method 'configure'
+    at Object.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:5:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:906:3
+
+/home/ubuntu/sf-foodtruck/server.js:5
+app.configure(function() {
+    ^
+TypeError: Object function (req, res, next) {
+    app.handle(req, res, next);
+  } has no method 'configure'
+    at Object.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:5:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:906:3
+
+/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/routes/foodtrucks.js:27:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:36
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:36:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:36
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:36:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
+
+/home/ubuntu/sf-foodtruck/server.js:36
+      that.data = listing;
+      ^
+ReferenceError: that is not defined
+    at IncomingMessage.<anonymous> (/home/ubuntu/sf-foodtruck/server.js:36:7)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:919:16
+    at process._tickCallback (node.js:419:13)
