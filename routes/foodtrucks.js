@@ -1,7 +1,8 @@
+"use strict";
 var FoodTrucks = {};
-FoodTrucks.data;
+FoodTrucks.data = [];
 FoodTrucks.filtered = {};
-FoodTrucks.lastUpdateTime;
+FoodTrucks.lastUpdateTime = null;
 
 exports.main = function(req, res) {
   res.send("HI!");
@@ -21,7 +22,6 @@ exports.getRawData = function(req, res) {
     return;
   }
   var url = "http://data.sfgov.org/resource/rqzj-sfat.json";
-  var that = this;
   var ht = {};
   http.get(url, function(r) {
     var body = '';
@@ -29,7 +29,7 @@ exports.getRawData = function(req, res) {
         body += chunk;
     });
     r.on('end', function() {
-      var d = JSON.parse(body)
+      var d = JSON.parse(body);
       var listing = [];
       for (var i = 0; i < d.length; i++) {
           var t = d[i];
@@ -63,7 +63,7 @@ exports.getFilteredData = function(req, res) {
     FoodTrucks.filterData();
     res.send(FoodTrucks.filtered);
   }
-}
+};
 exports.getUserFilteredData = function(req, res) {
   var data = [];
   var filteredBy = JSON.parse(req.params.filterby);
@@ -74,9 +74,9 @@ exports.getUserFilteredData = function(req, res) {
     }
   }
   res.send(data);
-}
+};
 FoodTrucks.filterData = function() {
-  var item, keyword, category; 
+  var item, category; 
   var basicKeyword = {
     "meals": [ 
       "sandwich", "pizza", "salad", "burrito", "hot dogs", "italian", 
@@ -108,16 +108,7 @@ FoodTrucks.filterData = function() {
 
     }
     return found;
-  }
-  var findKeyword = function(menu){
-    var keyword = "";
-    if (menu && menu.indexOf(":") > - 1) {
-      keyword = menu.substring(0, menu.indexOf(":"));
-    } else if (menu && menu.length > 0) {
-      keyword = menu;
-    }
-    return keyword;
-  }
+  };
   for (var i = 0; i < FoodTrucks.data.length; i++) {
     item = FoodTrucks.data[i];
     // keyword = findKeyword(item.menu);
@@ -137,10 +128,10 @@ FoodTrucks.filterData = function() {
       }
     } 
     else {
-      if (!FoodTrucks.filtered["etc"]) {
-        FoodTrucks.filtered["etc"] = []; 
+      if (!FoodTrucks.filtered.etc) {
+        FoodTrucks.filtered.etc = []; 
       }
-      FoodTrucks.filtered["etc"].push(item);
+      FoodTrucks.filtered.etc.push(item);
     } 
   }
-}
+};

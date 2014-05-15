@@ -1,6 +1,6 @@
+"use strict";
 var express = require('express');
-    http = require('http');
-    trucks = require('./routes/foodtrucks');
+var trucks = require('./routes/foodtrucks');
 var app = express();
 // app.configure(function() {
 //   app.use(express.logger('dev'));
@@ -23,14 +23,14 @@ app.use(function (req, res, next) {
 	next();
 });
 
-app.set('port', (process.env.PORT || 8080))
-// app.use(express.static(__dirname + '/public'))
+app.set('port', (process.env.PORT || 8080));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', trucks.main);
 app.get('/all', trucks.getRawData);
-app.get('/filter', trucks.getFilteredData)
+app.get('/filter', trucks.getFilteredData);
 app.get('/userFilter/:filterby', trucks.getUserFilteredData);
 
 app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
-})
+  console.log("Node app is running at localhost:" + app.get('port'));
+});
