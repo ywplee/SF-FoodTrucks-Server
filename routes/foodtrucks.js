@@ -1,4 +1,5 @@
 "use strict";
+var http = require("http");
 var FoodTrucks = {};
 FoodTrucks.data = [];
 FoodTrucks.filtered = {};
@@ -18,7 +19,9 @@ exports.getRawData = function(req, res) {
     return true;
   };
   if (FoodTrucks.data && requireUpdate() === false) {
-    res.send(FoodTrucks.data);
+    if (res) {
+      res.send(FoodTrucks.data);
+    }
     return;
   }
   var url = "http://data.sfgov.org/resource/rqzj-sfat.json";
@@ -49,11 +52,15 @@ exports.getRawData = function(req, res) {
       FoodTrucks.data = listing;
       FoodTrucks.filterData();
       FoodTrucks.lastUpdateTime = new Date().getTime();
-      res.send(listing);
+      if (res) {
+        res.send(listing);
+      }
     });
   }).on('error', function(e) {
     console.log("Got error: ", e);
-    res.send([]);
+    if (res) {
+      res.send([]);
+    }
   });
 };
 exports.getFilteredData = function(req, res) {
